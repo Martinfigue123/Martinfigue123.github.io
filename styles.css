@@ -18,6 +18,11 @@ table {
     border-collapse: collapse;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
