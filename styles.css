@@ -8,7 +8,7 @@ body {
 
 /* Encabezados */
 h1 {
-    color: #000000;
+    color: #007bff;
 }
 
 /* Tabla de habilidades */
@@ -16,11 +16,6 @@ table {
     width: 50%;
     margin: auto;
     border-collapse: collapse;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 th, td {
@@ -39,4 +34,10 @@ th {
     padding: 10px;
     background-color: #e0e0e0;
     border-radius: 5px;
+}
+
+#news-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
 }

@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Introduction</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1> My Personal Introduction</h1>
-        <!-- Con cada <p>...</p> agregamos un parrafo distinto-->
-        <p>Name: Martin Figueroa</p>
-        <p>Major: Computing</p>
-        <p>At the university since 2022</p>
-        <p>GitHub: 
-            <a href="https://github.com/Martinfigue123/Martinfigue123.github.io" target="_blank">
-                 Go to my GitHub profile
-            </a>
-        </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Profile</a>
+        </div>
+    </nav>
 
-        <h2> About Me </h2>
-        <p>My name is Martin Figueroa, a former student of Tabancura School. I like sports, computers, and teamwork. It's something that I don't find very difficult to do.</p>
+    <div class="container mt-5 pt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>My Personal Introduction</h1>
+                <p><strong>Name:</strong> Martin Figueroa</p>
+                <p><strong>Major:</strong> Computer Science</p>
+                <p><strong>Year of University Enrollment:</strong> 2022</p>
+                <p>GitHub: 
+                    <a href="https://github.com/Martinfigue123/Martinfigue123.github.io" target="_blank">
+                        Go to my GitHub profile
+                    </a>
+                </p>
+                <h2>About Me</h2>
+                <p>My name is Martin Figueroa, a former student of Tabancura School. I like sports, computers, and teamwork.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2> My picture</h2>
+                <img src="Picture1.jpg" alt="My picture" class="img-fluid rounded-circle shadow-lg">
+            </div>
+        </div>
         
-        <h2> My picture</h2>
-        <img src="6e3ad88c95942e9de2254eba871fcf23.jpg" alt="My picture" width="200">
-        <h2> My Skills </h2>
-        <table>
-            <tr>
-                <th> Skill </th>
-                <th> Level </th>
-            </tr>
-            <tr>
-                <td> Python </td>
-                <td> Advance </td>
-            </tr>
-            <tr>
-                <td> Program in C </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> Program in C++ </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> HTML </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> CSS </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> JavaScript </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> SQL </td>
-                <td> Basic </td>
-            </tr>
-            <tr>
-                <td> English </td>
-                <td> Advance </td>
-            </tr>
-            <tr>
-                <td> Spanish </td>
-                <td> Native </td>
-            </tr>
-
+        <h2 class="mt-4">My Skills</h2>
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Python</td><td>Advanced</td></tr>
+                <tr><td>C</td><td>Basic</td></tr>
+                <tr><td>C++</td><td>Basic</td></tr>
+                <tr><td>HTML</td><td>Basic</td></tr>
+                <tr><td>CSS</td><td>Basic</td></tr>
+                <tr><td>JavaScript</td><td>Basic</td></tr>
+                <tr><td>SQL</td><td>Basic</td></tr>
+                <tr><td>English</td><td>Advanced</td></tr>
+                <tr><td>Spanish</td><td>Native</td></tr>
+            </tbody>
         </table>
-    </body>
-    </html>
+
+        <h2>Latest News</h2>
+        <div id="news-container" class="row bg-light p-3 rounded shadow-sm">
+        </div>
+
+        <h2>Interactive Section</h2>
+        <input type="text" id="inputText" class="form-control" placeholder="Enter new text">
+        <button class="btn btn-success btn-lg mt-2" onclick="updateSection()">Update Text</button>
+        <div class="alert alert-info mt-2" id="dynamicSection">
+            This text will change when you enter something and press the button.
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
